@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/store-data.js"></script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="title">Store locator</div>
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12843273.87983452!2d-92.30333414602946!3d43.073810039047665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2ssi!4v1563604338825!5m2!1sen!2ssi" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+    <div class="map"></div>
 
     <div class="search-container">
         <div class="search">
@@ -22,16 +21,28 @@
     </div>
     <div class="stores-list-container">
         <div class="stores-list">
-            <div class="store-address">
-                
+            <div class="store-container">
+                <div class="store-info-container">
+                    <div class="store-address">
+                        <span> 8480 Beverly Blvd</span>
+                        <span>Los Angeles, CA 90048</span>
+                    </div>
+                    <div class="store-phone-number">345-289-5434</div>
+                </div>
+                <div class="store-number-container">
+                    <div class="store-number">
+                        1
+                    </div>
+                </div>
             </div>
-            <div class="store-phone-number">
-
-            </div>
-        </div>
+        </div>       
     </div>
     
-  
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 </body>
 </html>

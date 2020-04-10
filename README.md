@@ -1,1 +1,1 @@
-# Google-Maps
+Simple google maps store locator application with search store feature based on zip code input. Store data located in store-data.js file is actual raw data of starbucks stores. In order to import google maps and  for project to work, you have to request google maps API key. More on https://developers.google.com/maps/documentation/javascript/tutorial
